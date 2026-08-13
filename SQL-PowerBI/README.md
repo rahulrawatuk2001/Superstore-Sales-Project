@@ -28,7 +28,7 @@ This project shows an end-to-end sales analytics workflow. The raw Superstore Sa
 - Decision: NULL was used instead of deleting rows, because `SUM()`/`AVG()` in SQL automatically skip NULL values, so the row's other data (Region, Category, etc.) doesn't get lost.
 
 **Removing Unwanted Symbols**
-- Found a currency-encoding issue in the Sales column — values were prefixed with `â‚¹` instead of a clean number (happened during import into MySQL). Removed this symbol using `REPLACE()`.
+- Found a currency-encoding issue in the Sales column — values were prefixed with ? instead of a clean number (happened during import into MySQL). Removed this symbol using `REPLACE()`.
 
 **Data Type Conversion**
 - Sales and Profit converted to `DECIMAL(10,2)`.
