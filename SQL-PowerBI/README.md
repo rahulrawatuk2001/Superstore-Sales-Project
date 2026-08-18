@@ -4,7 +4,7 @@
 This project shows an end-to-end sales analytics workflow. The raw Superstore Sales data was cleaned and checked in MySQL, then imported into Power BI to create table relationships, DAX measures, and an interactive dashboard.
 
 ## Aim
-The main aim of this project was to analyze sales performance and profitability — Sales, Profit, and Profit Margin — across different months, categories, segments, and sub-categories, along with overall business metrics like Total Orders and AOV. The goal was to identify important patterns and differences in sales and profitability, and present the findings through an interactive Power BI dashboard.
+The main aim of this project was to analyze sales performance and profitability — Sales, Profit, and Profit Margin — across different months, categories, segments, and sub-categories, along with overall business metrics like Total Orders , AOV and YoY Growth %. The goal was to identify important patterns and differences in sales and profitability, and present the findings through an interactive Power BI dashboard.
 
 ## Tools Used
 MySQL
