@@ -78,37 +78,37 @@ Also checked correlation between Sales, Profit, Discount, and Quantity using `.c
 
 **1. Line Plot – Monthly Sales Trend**
 
-<img src="images/chart1_monthly_sales_trend.png" width="500">
+<img src="chart1_monthly_sales_trend.png" width="500">
 
 Sales go up and down every month from 2019 to 2022, with no steady increase or decrease. Some months (like early 2021) show very high sales, while others drop a lot. The chart alone doesn't explain why — deeper analysis by Category, Region, or Segment is needed.
 
 **2. Bar Plot – Category-wise Sales**
 
-<img src="images/chart2_category_sales.png" width="500">
+<img src="chart2_category_sales.png" width="500">
 
 Office Supplies had the highest Sales, Furniture was very close to it, while Technology had comparatively lower Sales than the other two categories.
 
 **3. Scatter Plot – Discount vs Profit**
 
-<img src="images/chart3_discount_vs_profit.png" width="500">
+<img src="chart3_discount_vs_profit.png" width="500">
 
 Discount only occurs at fixed levels (0.0, 0.1, 0.2, 0.3, 0.5 — no orders at 0.4). As Discount increases, the maximum Profit value decreases — at 0 discount, Profit goes up to ~6800, but at 0.5 discount, it only reaches ~2600.
 
 **4. Box Plot – Profit by Category**
 
-<img src="images/chart4_profit_by_category.png" width="500">
+<img src="chart4_profit_by_category.png" width="500">
 
 All three categories have both profit and loss orders, and all three contain many outliers (both high-profit and high-loss). Technology has some of the highest positive profit outliers.
 
 **5. Heatmap – Correlation Matrix**
 
-<img src="images/chart5_correlation_heatmap.png" width="500">
+<img src="chart5_correlation_heatmap.png" width="500">
 
 Sales and Quantity: moderate positive relationship (0.61). Sales and Profit: weak positive relationship (0.23). Sales and Discount: weak negative relationship (-0.2). Profit and Discount: almost no relationship (-0.049).
 
 **6. Histogram – Sales Distribution**
 
-<img src="images/chart6_sales_distribution.png" width="500">
+<img src="chart6_sales_distribution.png" width="500">
 
 Most Sales transactions are concentrated at lower values, and the number of transactions gradually decreases as Sales amount increases. A small number of transactions have very high Sales values, forming a long right tail (positively/right skewed distribution).
 
