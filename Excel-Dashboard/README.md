@@ -3,30 +3,45 @@
 ## Overview
 This project analyzes the Superstore Sales dataset using only Excel. The goal was to clean the raw data and build an interactive dashboard using Excel Pivot Tables and Charts.
 
+## Aim
+The main aim of this project was to clean and analyze the Superstore Sales dataset using Excel to calculate key business metrics — Total Sales, Total Profit, Profit Margin %, and Total Orders — across Category, Region, Sub-Category, and Customers. The goal was to build an interactive Pivot Table-based dashboard with charts and slicers, and present the key patterns through Insights.
+
 ## Tools Used
 - Microsoft Excel (Pivot Tables, Pivot Charts, Slicers, Formulas, Find & Replace)
 
 ## Workflow
 The file has 5 sheets, and each one has a specific job:
-1. **Raw Data** – the original, unedited dataset (10,014 rows)
-2. **Working Data** – cleaned version of the data (missing values handled, duplicates removed, and invalid values corrected) — 9,986 rows after cleaning
-3. **Metrics** – pivot tables that calculate totals, averages, and breakdowns
-4. **Dashboard** – the final visual dashboard built from the pivot tables
-5. **Insights** – written observations about what the dashboard shows
+- **Raw Data** – the original, unedited dataset (10,014 rows)
+- **Working Data** – cleaned version of the data (missing values handled, duplicates removed, and invalid values corrected) — 9,986 rows after cleaning
+- **Metrics** – pivot tables that calculate totals, averages, and breakdowns
+- **Dashboard** – the final visual dashboard built from the pivot tables
+- **Insights** – written observations about what the dashboard shows
 
-## Data Cleaning
-- All columns were originally in the General format. Data types were corrected for Order Date, Ship Date, Sales, Profit, Quantity, and Discount so they worked correctly in formulas and Pivot Tables.
-- Missing values in Sales, Profit, and Order Date were treated as blank, not deleted.
-- Order Date had 22 rows with "N/A" as text — removed using Find & Replace, so they became true blanks.
-- Profit had 12 rows with "unknown" and 8 rows with "N/A" — both removed using Find & Replace, so they became blank (35 rows were already blank and were left as is).
-- City had 10 rows where the state name was stuck after a comma (e.g. "Mobile, Alabama") — the state part was removed using Find & Replace, keeping just the city name.
-- Sub-Category had spelling mistakes in 6 values (extra letter at the end, like "Bookcasess" instead of "Bookcases") — fixed using Find & Replace.
-- Ship Mode and Customer Name had extra leading/trailing spaces — removed using TRIM().
-- Sales had 13 rows with a ? symbol stuck to the number — removed using Find & Replace so the values became usable numbers.
-- Invalid Discount values (outside the 0–1 range) were cleared, but the row was kept, since the row itself was still a valid transaction.
-- Quantity had 9 rows with a negative value (-1) — this was a sign error, not a real return/refund entry, so it was corrected using ABS() rather than removing the row.
-- Rows with negative Sales were removed entirely (all columns, not just the Sales value), since there was no way to justify keeping an invalid transaction.
-- Duplicate rows were removed using Remove Duplicates, checking all columns except Row ID and Order ID.
+## Data Cleaning Process
+All initial fields were imported in `General` format. Data types and anomalies were addressed sequentially:
+
+1. **Data Type Standardization:**
+   - Converted `Order Date` and `Ship Date` to standard Date formats.
+   - Converted `Sales`, `Profit`, `Quantity`, and `Discount` into appropriate Numeric/Currency formats for accurate formula and Pivot Table processing.
+
+2. **Text Normalization & Trimming:**
+   - **Leading/Trailing Whitespace:** Applied `TRIM()` to `Ship Mode` and `Customer Name` to eliminate trailing/leading space inconsistencies.
+   - **City Field Standardization:** Corrected 10 rows where state names were appended after a comma (e.g., `"Mobile, Alabama"`) by stripping the state suffix to retain clean city names.
+   - **Sub-Category Typos:** Corrected 6 misspelled entries with trailing characters (e.g., `"Bookcasess"` → `"Bookcases"`) via Find & Replace.
+
+3. **Missing & Non-Standard Null Handling:**
+   - **Order Date:** Identified 22 text instances of `"N/A"` and converted them to true blanks using Find & Replace.
+   - **Profit:** Identified 12 instances of `"unknown"` and 8 instances of `"N/A"`, converting both to true blanks (in addition to 35 pre-existing blank rows).
+   - **Missing Sales/Profit/Dates:** Kept true blank records intact without deleting entire rows to preserve transactional integrity where applicable.
+
+4. **Numeric Cleansing & Outlier Treatment:**
+   - **Sales Formatting Errors:** Removed stray `?` characters from 13 values via Find & Replace to restore numeric usability.
+   - **Negative Sales Records:** Completely removed rows containing negative `Sales` values, as these represented irrecoverable corrupted transactions.
+   - **Discount Boundary Violations:** Cleared invalid values outside the allowable range of 0.00 to 1.00 while retaining the underlying row.
+   - **Quantity Sign Inversion:** Addressed 9 rows containing negative quantities (-1) by applying `ABS()`, treating them as sign-entry errors rather than returns.
+
+5. **Deduplication:**
+   - Ran Remove Duplicates across all attributes excluding `Row ID` and `Order ID`, resulting in a final cleaned dataset of 9,986 rows.
 
 ## Metrics (Pivot Tables)
 - Total Sales, Total Profit, Profit Margin %, and Total Orders calculated at the top level.
