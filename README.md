@@ -1,16 +1,16 @@
-# Superstore Sales — Data Analytics Portfolio
+# Data Analytics Portfolio
 
-This repository contains the same Superstore Sales dataset analyzed using three different tools, to show that the same business questions can be answered in more than one way.
+This repository contains an AI-generated synthetic retail transactions dataset (10,014 rows, 21 columns) with intentionally injected data-quality issues, analyzed using three different tools, to show that the same business questions can be answered in more than one way.
 
 ## Projects
 
-### 📊 [SQL + Power BI](./SQL-PowerBI)
+📊 [SQL Data Pipeline & Power BI Dashboard](https://github.com/rahulrawatuk2001/Data-Analytics-Portfolio/blob/main/SQL-PowerBI)
 Data cleaned and checked in MySQL, then imported into Power BI to create table relationships, DAX measures, and an interactive dashboard.
 
-### 📈 [Excel Dashboard](./Excel-Dashboard)
+📈 [Excel Reporting Dashboard](https://github.com/rahulrawatuk2001/Data-Analytics-Portfolio/blob/main/Excel-Dashboard)
 Data cleaned and analyzed using only Excel — Pivot Tables, Pivot Charts, and formulas, without using SQL or Power BI.
 
-### 🐍 [Python EDA](./Python-EDA)
+🐍 [Python Exploratory Data Analysis (EDA)](https://github.com/rahulrawatuk2001/Data-Analytics-Portfolio/blob/main/Python-EDA)
 Exploratory Data Analysis using Python (Pandas, Matplotlib, and Seaborn) — data cleaning, statistical analysis, and visualizations.
 
 ## Skills Demonstrated
