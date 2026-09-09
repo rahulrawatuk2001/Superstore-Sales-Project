@@ -1,10 +1,10 @@
-# Superstore Sales – Python EDA Project
+# Python Exploratory Data Analysis (EDA)
 
 ## Overview
-This project is an Exploratory Data Analysis (EDA) of the Superstore Sales dataset using Python. The goal was to clean the raw data, check it for quality issues, and find patterns in Sales and Profit using statistics and visualizations.
+This project is an Exploratory Data Analysis (EDA) of an AI-generated synthetic retail transactions dataset using Python. The goal was to clean the raw data, check it for quality issues, and find patterns in Sales and Profit using statistics and visualizations.
 
 ## Aim
-The main aim of this project was to clean and analyze the Superstore Sales dataset using Python to understand Sales, Profit, and Profit Margin patterns across Category, Sub-Category, Region, and Discount levels. The goal was to detect data quality issues and outliers, evaluate statistical relationships between Sales, Profit, Discount, and Quantity using correlation analysis, and present key business insights through exploratory data visualizations.
+The main aim of this project was to clean and analyze the retail transactions dataset using Python to understand Sales, Profit, and Profit Margin patterns across Category, Sub-Category, Region, and Discount levels. The goal was to detect data quality issues and outliers, evaluate statistical relationships between Sales, Profit, Discount, and Quantity using correlation analysis, and present key business insights through exploratory data visualizations
 
 ## Tools Used
 - Python
@@ -14,7 +14,7 @@ The main aim of this project was to clean and analyze the Superstore Sales datas
 - Jupyter Notebook
 
 ## Dataset
-- Raw file: `Superstore_sales.csv`
+- Raw file: `retail_transactions.csv`
 - Total rows before cleaning: 10,014
 - Total columns: 21
 
