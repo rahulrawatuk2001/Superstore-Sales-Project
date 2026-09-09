@@ -1,7 +1,7 @@
-# Superstore Sales — SQL + Power BI Analytics Pipeline
+# SQL Data Pipeline & Power BI Dashboard
 
 ## Overview
-This project shows an end-to-end sales analytics workflow. The raw Superstore Sales data was cleaned and checked in MySQL, then imported into Power BI to create table relationships, DAX measures, and an interactive dashboard.
+This project shows an end-to-end sales analytics workflow. The raw retail transactions data was cleaned and checked in MySQL, then imported into Power BI to create table relationships, DAX measures, and an interactive dashboard.
 
 ## Aim
 The main aim of this project was to analyze sales performance and profitability — Sales, Profit, and Profit Margin — across different months, categories, segments, and sub-categories, along with overall business metrics like Total Orders , AOV and YoY Growth %. The goal was to identify important patterns and differences in sales and profitability, and present the findings through an interactive Power BI dashboard.
@@ -11,7 +11,7 @@ MySQL
 Power BI (Power Query + DAX)
 
 ## Step 1: Database Setup
-Created a new database (sales) and loaded the raw Superstore Sales data into it as the superstore_sales table.
+Created a new database (sales) and loaded the raw retail transactions data into it as the retail_sales table.
 
 ## Step 2: Data Understanding
 Checked total row count and distinct Row_id count to confirm the raw data size before touching anything.
@@ -69,7 +69,7 @@ Sales by Segment
 Category + Sub-Category level Sales, Profit, and Profit Margin overview
 
 ## Step 7: Power Query
-Connected Power BI to MySQL using Get Data, and imported the cleaned superstore_sales table.
+Connected Power BI to MySQL using Get Data, and imported the cleaned retail_sales table.
 Power Query was used only for minor data preparation, since all major data cleaning and business logic were already handled in SQL:
 
 Text formatting (Trim, Capitalize Each Word).
