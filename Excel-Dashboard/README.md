@@ -1,10 +1,10 @@
-# Superstore Sales — Excel Dashboard
+# Excel Reporting Dashboard
 
 ## Overview
-This project analyzes the Superstore Sales dataset using only Excel. The goal was to clean the raw data and build an interactive dashboard using Excel Pivot Tables and Charts.
+This project analyzes an AI-generated synthetic retail transactions dataset using only Excel. The goal was to clean the raw data and build an interactive dashboard using Excel Pivot Tables and Charts.
 
 ## Aim
-The main aim of this project was to clean and analyze the Superstore Sales dataset using Excel to calculate key business metrics — Total Sales, Total Profit, Profit Margin %, and Total Orders — across Category, Region, Sub-Category, and Customers. The goal was to build an interactive Pivot Table-based dashboard with charts and slicers, and present the key patterns through Insights.
+The main aim of this project was to clean and analyze the retail transactions dataset using Excel to calculate key business metrics — Total Sales, Total Profit, Profit Margin %, and Total Orders — across Category, Region, Sub-Category, and Customers. The goal was to build an interactive Pivot Table-based dashboard with charts and slicers, and present the key patterns through Insights.
 
 ## Tools Used
 - Microsoft Excel (Pivot Tables, Pivot Charts, Slicers, Formulas, Find & Replace)
